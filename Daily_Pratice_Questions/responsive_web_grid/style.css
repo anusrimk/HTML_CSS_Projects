@@ -1,0 +1,69 @@
+.gridcontainer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px;
+}
+
+
+.grinditem1{
+    background: rgb(89, 228, 114);
+    border: black 5px solid;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3
+}
+
+.griditem2{
+    background: rgb(255, 164, 217);
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 10px;
+}
+.griditem3{
+    background:rgb(105, 227, 234) ;
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 20;
+    border-radius: 10px;
+}
+.griditem4{
+    background:rgb(228, 72, 69) ;
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 20;
+    grid-row-end: 37;
+    border-radius: 10px;
+}
+.griditem5{
+    background:rgb(123, 63, 203) ;
+    border: black 5px solid;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 37;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.griditem6{
+    background:rgb(220, 228, 69) ;
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start:45;
+    grid-row-end: 60;
+    border-radius: 10px;
+}

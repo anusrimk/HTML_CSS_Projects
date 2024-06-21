@@ -1,0 +1,33 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    transform: rotate(45deg);
+
+    /* transform: rotate(-25deg); */
+
+     /*transform: scale(0.5)shrink to half size*/
+    /*transform: scale(1,2); doubles y axis*/
+
+    /* transform: skewX(25deg) skewY(25deg) */
+    /* box to matrix me ghumane */
+
+    /* transform: translate(3em,3em);
+    text ko ek kone me daalne ke liye */
+
+    transform: rotate(-25deg);
+    transform-origin: right bottom;
+}
+/* for a box with smiley */
+.box.fa{
+    font-size: 2em;
+    line-height: 1.45em;
+    text-align: center;
+    color: azure;
+}
+
+.box-wrap{
+    width: 6em;
+    height: 6em;
+    border: 5px darkcyan;
+}

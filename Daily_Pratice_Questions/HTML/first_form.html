@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <title>Anusri's First Form Submitting</title>
+    <head>
+        
+        Hello! Welcome to my first Webpage
+        <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 10;
+            padding: 0;
+            background-size: cover;
+            background-color: #fef7f7;
+            color: #453f3f;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <h2>Text Input</h2>
+        <form>
+            First Name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last Name:<br>
+            <input type="text" name="lastname">
+            <br>
+            <h3>Gender: </h3>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female" checked>Female<br>
+            <input type="radio" name="gender" value="Others">Others
+
+            Address:<br>
+            <text area=" 30%" name="Address"></text>
+            <br>
+            <h3>Date of birth(DD/MM/YYYY)</h3>
+            <input type="date" name="dto" id="date_timepicker_end">
+            <br><br>
+            <input type="Submit" value="submit">
+        </form>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusri's First Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8aaaa;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      font-weight: bold;
+      font-family:'Times New Roman', Times, serif;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ffb3b3;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    boxes{
+        width: 100%;
+        height: 70%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #e2bfbf;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        border-color: rgb(36, 145, 149);
+        padding: 20px;
+        background-image: linear-gradient(rgb(229, 129, 120), rgb(157, 157, 252), rgb(193, 241, 161), rgb(244, 244, 145));
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0.1, 0.1, 0.1, 0.1);
+        animation: gradientAnimation 10s ease infinite;
+      }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: rgb(223, 188, 188);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background: url('https://i.pinimg.com/originals/03/13/7d/03137dde3c4be7547fb42209009cbf66.gif') center center/cover;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>User Information Form</h2>
+  <form action="submit.php" method="POST">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName">
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName">
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName">
+
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" cols="50" width="70%"></textarea>
+    </div>
+    <div>
+        <h3>Gender: </h3>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female" checked>Female<br>
+            <input type="radio" name="gender" value="Others">Others
+
+            <br>
+            <br>
+    </div>
+    <div>
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate">
+    </div>
+    <div class="boxes">
+      <label for="Currently">Currently:</label>
+      <select id="Roles" name="roles">
+        <option value="Student">Student</option>
+        <option value="Working">Working</option>
+        <option value="Freelancing">Freelancing</option>
+        <option value="Entreprenuer">Entreprenuer</option>
+        <option value="Others">Other</option>
+      </select>
+    </div>
+    <div class="boxes">
+        <label for="What do you want to register for:">What do you want to register for:</label>
+        <select id="motive" name="motive" multiple size="2">
+          <option value="Compete">Compete</option>
+          <option value="Learn Only">Learn Only</option>
+          <option value="Job Interview">Job Interview</option>
+          <option value="Others">Other</option>
+        </select>
+      </div>
+      <div>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+        <br>
+        <br>
+
+      </div>
+    
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+

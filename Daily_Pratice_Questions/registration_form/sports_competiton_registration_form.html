@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url(images/green1.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 120%;
+            border-radius: 20%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+        form {
+            animation: fadeIn 0.5s ease-in-out;
+            background-color: #74ec76;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(232, 153, 153, 0.1);
+            height: 580px;
+            width: 400px;
+            max-width: 100%;
+            margin-right: 20px;
+            opacity: 90%;
+        }
+        
+
+        #staticHeading {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        img.logo {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            width: 100px; 
+          }
+
+
+        @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+  
+      label {
+          display: block;
+          margin-bottom: 8px;
+      }
+  
+      input, select {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 12px;
+          box-sizing: border-box;
+      }
+  
+      select[multiple] {
+        background-color: #abd8ad;
+          height: auto;
+          border: #4caf50 ;
+      }
+  
+  
+      label {
+          display: inline-block;
+          margin-right: 10px; 
+      }
+      
+      input[type="radio"] {
+          margin-right: 5px;
+      }
+  
+      button {
+          background-color: #4caf50;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-right: 10px;
+      }
+      button:hover {
+          background-color: #45a049;
+      }
+
+      .button-container {
+          display: flex;
+          justify-content: center;
+          
+      }
+
+    </style>
+
+    <title>Sports Registration Form</title>
+</head>
+
+<body>
+<div align="center">
+    
+</div>
+<div id="staticHeading"><h1>Sports for All</h1></div>
+
+<form >
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required>
+
+  <label for="competition">Select Competition:</label>
+  <select id="competition" name="competition" required>
+      <option value="football">Football</option>
+      <option value="basketball">Basketball</option>
+      <option value="tennis">Tennis</option>
+  </select>
+ 
+  <label for="sports">Select Sports Categories:</label>
+  <select id="sports" name="sports" multiple size="2" required>
+      <option value="Running">Running</option>
+      <option value="Swimming">Swimming</option>
+      <option value="Cycling">Cycling</option>
+      <option value="Archery">Archery</option>
+      <option value="Football">Football</option>
+  </select>
+
+  <label>Gender:</label>
+  <br>
+  <label><input type="radio" name="gender" value="male" required> Male</label>
+  <label><input type="radio" name="gender" value="female" required> Female</label>
+  <div>
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
+  </div>
+  <br>
+  <div>
+  <label>Phone No:</label>
+  <label style="font-size:9px ;padding-left:2px"> Eg : 872 824 2964  </label> 
+  <input type="text">
+  
+</div>
+  <div class="button-container">
+      <button style="background-color: black; color: white;" type="submit">Submit and Pay Now</button>
+      <button style="background-color: black; color: white;" type="submit">Submit and Pay Later</button>
+  </div>
+  
+
+</form>
+
+</body>
+</html>

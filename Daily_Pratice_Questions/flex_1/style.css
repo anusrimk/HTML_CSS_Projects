@@ -1,0 +1,63 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    /*-webkit-flex-direction: row-reverse; 
+    flex-direction: row-reverse;
+    /*-webkit-flex-direction: column;  FOR COLUMN WISE ARRANGEMENT*/
+
+    /*
+    flex-direction: column;
+    flex-direction: column-reverse;CSS3 FLEXBOX COLUMN REVERSE PROPERTY*/
+    
+
+    flex-direction: row;
+    
+    /*flex end is used to add items to the end
+    flex start is used to add items to the start by default
+    baseline is used to attach it to the top line as reference like handing cloths on a clothing line
+    stretch is used to stretch the item to the full height
+    center is used to align it to center
+    */
+
+    /* flex-wrap:wrap-reverse; is used to reverse and fit into screen*/
+    /* for no wrap then vo san ek line me aa jayega and 
+    wrap karungi toh ek ke neeche ek arrange ho jayega */
+
+    background-color: rgb(242, 172, 172);
+    /*justify-content: space-between; spae between is used to increace or determine space between two items*/
+}
+
+.flex-item {
+    background-color: rgb(161, 246, 124);
+    /* width: 300px;
+    height: 150px; */
+    margin: 10px;
+    align-items: baseline;
+    
+    
+}
+
+.flex-item1 {
+    background-color:rgb(239, 117, 117);
+    /* width: 300px;
+    height: 100px; */
+    margin: 10px;
+    align-items: stretch;
+}
+
+.flex-item2 {
+    background-color:rgb(172, 131, 237);
+    /* width: 300px;
+    height: 100px; */
+    margin: 10px;
+    align-items: flex-end;
+   
+    
+
+}
+body{
+    direction: ltr;
+    /* to add direction to flex item */
+}

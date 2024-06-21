@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Examples</title>
+    <style>
+        body{
+            background-color: rgb(142, 195, 242);
+            box-shadow: 0cap;
+        }
+        img {
+            border: 2px solid #000; /* Black border with 2 pixels width */
+            width: 200px; /* Set width of the image */
+            height: 150px; /* Set height of the image */
+            margin-right: 10px; /* Set right margin */
+        }
+
+        #movingImage {
+            position: relative;
+            animation: moveImage 3s infinite alternate; /* Move the image animation */
+        }
+
+        @keyframes moveImage {
+            from {
+                left: 0;
+            }
+            to {
+                left: 200px; 
+            }
+        }
+
+        body {
+            background-image: url('background.jpg'); /* Set background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Description of the image">
+
+
+    <img src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Description of image 1">
+    <img src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Description of image 2">
+    <img src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Description of image 3">
+
+
+    <img src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Description of the image">
+
+
+    <img src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Description of the image" width="300" height="200" hspace="20" vspace="10">
+
+
+    <img id="movingImage" src="https://i.pinimg.com/originals/fb/3a/59/fb3a59f7fa8737081bfe464ae94e428f.gif" alt="Moving Image">
+</body>
+</html>

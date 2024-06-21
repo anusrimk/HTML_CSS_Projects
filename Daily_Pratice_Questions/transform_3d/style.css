@@ -1,0 +1,166 @@
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  *{
+    margin: 0;
+
+}
+.box {
+    margin: 300px;
+    width:3em ;
+    height: 3em;
+    border: 10px solid #000000;
+    font-size:2em;
+    line-height: 1.45em;
+    text-align: center;
+    background-color: rgb(184, 190, 255);
+    transition: 1s;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px;
+}
+.grid-item1{
+    background: rgb(90, 207, 233);
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-item2{
+    background: rgb(238, 154, 126);
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+box:hover{
+    background-color: rgb(219, 76, 15);
+    transition: 1s;
+    box-shadow: 20px 20px #000000;
+    transform: rotate(45deg);
+}
+
+
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotateY(0deg) rotateX(0deg);
+    }
+    50% {
+      transform: rotateY(180deg) rotateX(180deg);
+    }
+    100% {
+      transform: rotateY(360deg) rotateX(360deg);
+    }
+  }
+
+   */
+/* .box {
+    margin: 300px;
+    width: 6em;
+    height: 6em;
+    border: 10px solid #000000;
+    /* font-size: 2em;
+    line-height: 1.45em;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    transition: background-image 1s;
+    transition: 1s; /* Adding transition for background-image */
+/* 
+} */
+/* 
+.box:hover {
+    box-shadow: 20px 20px #000000;
+    transform: rotate(90deg);
+    transition: 1s;
+    background-image: linear-gradient(to right, red, yellow);
+    
+} */
+
+/* .box p {
+    transition: 1s;
+} */
+
+/* .box:hover p {
+    transform: rotate(-90deg);
+    transition: 1s;
+} 
+*/
+
+.gridcontainer{
+    display: grid;
+    height: 100%;
+    width: 50%;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px;
+}
+
+
+.grinditem1{
+    background: rgb(127, 127, 232);
+    border: black 5px solid;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3
+}
+
+.griditem2{
+    background: rgb(255, 164, 217);
+    border: black 5px solid;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 10px;
+}
+.griditem3{
+    background:rgb(69, 221, 228) ;
+    border: black 5px solid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 13;
+    border-radius: 10px;
+}
+.griditem4{
+    background:rgb(228, 72, 69) ;
+    border: black 5px solid;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 13;
+    border-radius: 10px;
+}
+.griditem5{
+    background:rgb(138, 69, 228) ;
+    border: black 5px solid;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 10px;
+}
+.griditem6{
+    background:rgb(220, 228, 69) ;
+    border: black 5px solid;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start:3;
+    grid-row-end: 13;
+    border-radius: 10px;
+}

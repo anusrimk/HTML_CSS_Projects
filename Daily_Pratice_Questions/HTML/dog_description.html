@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #fdd0be;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f3a594;
+      background-image: url("football.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    h1 {
+      text-decoration: overline;
+      text-shadow: 3px;   
+    }
+    h2 {
+      text-transform: capitalize;
+      text-decoration: underline;
+      text-shadow: #c57777;
+      direction: rtl;
+      margin-top: 10px; /
+    }
+    p {
+      border: 10px rgb(0, 0, 0);
+      background-color: rgb(247, 223, 190);
+      font-family: 'Courier New', Courier, monospace;
+      text-indent: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 10px; 
+      line-height: 1.0;
+      word-spacing: 1.5px;
+      word-wrap: normal;
+    }
+    
+    .container {
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #f2dfd3; 
+      padding: 20px; 
+      border-radius: 10px; 
+      width: 60%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      margin-left: 270px;
+    }
+    .box {
+      width: 100%; 
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+    }
+    .box:nth-child(1) .image-box {
+      margin-right: 10px;
+    }
+    .image-box {
+      clear: both;
+      margin-bottom: 20px;
+      border-bottom: 1px solid black;
+      padding-bottom: 20px; 
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+    .image-box img {
+      width: 300px; 
+      height: auto;
+      margin-bottom: 10px; 
+    }
+    .image-box h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .image-box p {
+      margin: 10px 0 0 0;
+    }
+    .image-box a{
+      text-decoration: none;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div align="center" id="staticHeading"><h1>Dog Breeds</h1></div>
+
+  <div class="container">
+    <div class="image-box">
+      <img src="https://img.freepik.com/free-photo/cute-golden-retriever_144627-26658.jpg?w=900&t=st=1707201888~exp=1707202488~hmac=e12f34ff46271b89fe6fb0c4950038c5f9c5e83e4ea90287fd28bda5acc6ef5f"  alt="Image 1">
+      <div class="info">
+        <h2>Labrador</h2>
+        <p>The Labrador Retriever or simply Labrador is a British breed of retriever gun dog. 
+          It was developed in the United Kingdom from St. John's water dogs imported from the colony
+           of Newfoundland (now a province of Canada), and was named after the Labrador region
+            of that colony. </p>
+      </div>
+    </div>
+
+    <div class="image-box">
+      <img src="https://img.freepik.com/free-photo/vertical-picture-german-shepherd-surrounded-by-greenery-with-blurry-background_181624-9782.jpg" alt="Image 2">
+      <div class="info">
+        <h2>German Shepard</h2>
+        <p>The German Shepherd, also known in Britain as an Alsatian, is a German breed of working 
+          dog of medium to large size. The breed was developed by Max von Stephanitz using various 
+          traditional German herding dogs from 1899. It was originally bred as a herding dog, 
+          for herding sheep.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <img src="https://img.freepik.com/free-photo/vertical-shallow-focus-side-view-siberian-husky-dog_181624-60703.jpg?size=626&ext=jpg&ga=GA1.1.2043447324.1707200572&semt=ais" alt="Image 2">
+      <div class="info">
+        <h2>Husky</h2>
+        <p>The Siberian Husky is a medium-sized working sled dog breed. The breed belongs to 
+          the Spitz genetic family. It is recognizable by its thickly furred double coat, erect triangular 
+          ears, and distinctive markings, and is smaller than the similar-looking Alaskan Malamute</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
